@@ -805,5 +805,51 @@
   }
 }
 
+.bmc-section {
+  padding: 4rem 0;
+  background-color: #f7f9fb;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #1e2a38;
+}
+
+.bmc-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.bmc-box {
+  background-color: white;
+  border-left: 5px solid #4b9cd3;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.bmc-box h4 {
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.bmc-box ul {
+  list-style: disc;
+  padding-left: 1.2rem;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .bmc-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
 
 
