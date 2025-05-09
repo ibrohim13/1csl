@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Citra Selaras Logistik</title>
+  
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
@@ -18,18 +19,31 @@
 
 <body>
   <header class="navbar">
-    <div class="container">
-      <img src="assets/images/LOGOS.png" alt="Logo Citra Selaras Logistik">
-      <nav>
-        <ul>
-          <li><a href="#tentang">About Us</a></li>
-          <li><a href="#layanan">Services</a></li>
-          <li><a href="#portofolio">Clients</a></li>
-          <li><a href="#cta">Contact Us</a></li>
-        </ul>
-      </nav>
+  <div class="container navbar-inner">
+    <!-- Logo -->
+    <div class="navbar-logo">
+      <img src="assets/images/LOGOS.png" alt="Citra Selaras Logistik Logo">
+      <span class="brand-name"></span>
     </div>
-  </header>
+
+    <!-- Toggle menu untuk mobile -->
+    <button class="navbar-toggle" id="menuToggle">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Menu navigasi -->
+    <nav class="navbar-menu" id="navbarMenu">
+      <ul>
+        <li><a href="#tentang">About Us</a></li>
+        <li><a href="#layanan">Services</a></li>
+        <li><a href="#portofolio">Clients</a></li>
+        <li><a href="#portofolio">BMC</a></li>
+        <li><a href="#cta">Contact Us</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
 
   <section class="hero">
     <div class="hero-carousel">
@@ -38,9 +52,9 @@
    
     </div>
     <div class="hero-content">
-      <h2>Solusi Logistik dan Konstruksi Terpercaya</h2>
-      <p>Melayani dengan profesionalisme dan integritas sejak 2006</p>
-      <a href="#tentang" class="btn-primary">Selengkapnya</a>
+      <h2>Trusted Logistics and Construction Solutions</h2>
+      <p>Serving with professionalism and integrity since 2006</p>
+      <a href="#tentang" class="btn-primary">More</a>
     </div>
   </section>
   
@@ -49,14 +63,14 @@
     <!-- About Section -->
     <section id="tentang" class="section">
       <div class="container">
-        <h2 class="section-title">Tentang Kami</h2>
+        <h2 class="section-title">About Us</h2>
         <div class="about-grid">
           <div class="about-text">
             <p>
-              Citra Selaras Logistik adalah perusahaan yang bergerak di bidang jasa pengadaan barang dan jasa, transportasi, general trading, serta penyediaan solusi logistik terpadu.
+              Citra Selaras Logistik is a company engaged in the field of procurement of goods and services, transportation, general trading, and provision of integrated logistics solutions.
             </p>
             <p>
-              Kami berdiri untuk memberikan pelayanan terbaik, cepat, dan tepat kepada seluruh klien dari instansi pemerintah hingga swasta. Kami berkomitmen menjadi mitra yang handal dan profesional.
+              We stand to provide the best, fast, and precise service to all clients from government to private agencies. We are committed to being a reliable and professional partner.
             </p>
           </div>
           <div class="about-image">
@@ -72,20 +86,20 @@
 <!-- Visi, Misi & Kegiatan Section -->
 <section id="visi-misi" class="section alt-bg">
   <div class="container">
-    <h2 class="section-title">Visi & Misi</h2>
+    <h2 class="section-title">Vision and mission</h2>
 
     <div class="visi-misi-grid">
       <div class="visi">
-        <h3 class="subheading">Visi</h3>
-        <p>Menjadi perusahaan jasa pengadaan barang dan jasa serta logistik yang unggul, terpercaya, dan profesional di tingkat nasional.</p>
+        <h3 class="subheading">Vision</h3>
+        <p>To become a superior, trusted and professional goods and services procurement and logistics company at the international level.</p>
       </div>
       <div class="misi">
-        <h3 class="subheading">Misi</h3>
+        <h3 class="subheading">Mision</h3>
         <ul>
-          <li>Menyediakan layanan terbaik yang cepat, tepat, dan efisien.</li>
-          <li>Menjalin hubungan kemitraan jangka panjang yang saling menguntungkan.</li>
-          <li>Meningkatkan kompetensi dan profesionalisme sumber daya manusia.</li>
-          <li>Menjaga integritas dan kualitas dalam setiap layanan.</li>
+          <li>Providing the best service that is fast, precise and efficient.</li>
+          <li>Establishing long-term mutually beneficial partnerships.</li>
+          <li>Improving the competence and professionalism of human resources.</li>
+          <li>Maintaining integrity and quality in every service.</li>
         </ul>
       </div>
     </div>
@@ -126,22 +140,22 @@
           <div class="service-card">
             <img src="assets/images/ff.jpg" alt="Layanan Freight Forwarding" />
             <h3>Freight Forwarding</h3>
-            <p>Kami melayani pengiriman barang domestik & internasional dengan manajemen logistik yang andal dan profesional.</p>
+            <p>We serve domestic & international shipping with reliable and professional logistics management.</p>
           </div>
           <div class="service-card">
             <img src="assets/images/wr.jpg" alt="Layanan Warehousing" />
             <h3>Warehousing</h3>
-            <p>Penyimpanan barang dengan sistem manajemen gudang yang efisien dan keamanan yang terjamin.</p>
+            <p>Storage of goods with an efficient warehouse management system and guaranteed security.</p>
           </div>
           <div class="service-card">
             <img src="assets/images/tr.jpg" alt="Layanan Transportasi" />
-            <h3>Transportasi</h3>
-            <p>Transportasi darat, laut, dan udara dengan armada yang lengkap dan jadwal yang fleksibel.</p>
+            <h3>Transportation</h3>
+            <p>Land, sea and air transportation with a complete fleet and flexible schedules.</p>
           </div>
           <div class="service-card">
             <img src="assets/images/cc.jpg" alt="Layanan Customs Clearance" />
             <h3>Customs Clearance</h3>
-            <p>Layanan kepabeanan untuk mempercepat proses keluar-masuk barang dari pelabuhan dan bandara.</p>
+            <p>Customs services to speed up the process of goods entering and leaving ports and airports.</p>
           </div>
         </div>
       </div>
@@ -150,27 +164,27 @@
 <!-- Kenapa Memilih Kami -->
 <section id="keunggulan" class="section light-section">
   <div class="container">
-    <h2 class="section-title">Kenapa Memilih Kami?</h2>
+    <h2 class="section-title">Why Choose Us?</h2>
     <div class="features-grid">
       <div class="feature-item">
         <img src="assets/images/tr.jpg" alt="Pengalaman" class="feature-icon">
-        <h3>Pengalaman & Kredibilitas</h3>
-        <p>Lebih dari 10 tahun melayani pelanggan di bidang logistik, kami dipercaya berbagai perusahaan besar.</p>
+        <h3>Experience & Credibility</h3>
+        <p>More than 10 years of serving customers in the logistics sector, we are trusted by various large companies.</p>
       </div>
       <div class="feature-item">
         <img src="assets/images/tr.jpg" alt="Layanan Terintegrasi" class="feature-icon">
-        <h3>Layanan Terintegrasi</h3>
-        <p>Dari gudang, pengiriman, hingga dokumen – kami menyediakan solusi end-to-end.</p>
+        <h3>Integrated Services</h3>
+        <p>From warehousing, shipping, to documents we provide end-to-end solutions.</p>
       </div>
       <div class="feature-item">
         <img src="assets/images/tr.jpg" alt="Tim Profesional" class="feature-icon">
-        <h3>Tim Profesional</h3>
-        <p>Didukung tim berpengalaman dan bersertifikasi di bidang freight forwarding & kepabeanan.</p>
+        <h3>Profesional team</h3>
+        <p>Supported by an experienced and certified team in the field of freight forwarding & customs.</p>
       </div>
       <div class="feature-item">
         <img src="assets/images/tr.jpg" alt="Dukungan Pelanggan" class="feature-icon">
-        <h3>Dukungan Pelanggan</h3>
-        <p>Layanan pelanggan responsif dengan komunikasi real-time untuk update status pengiriman.</p>
+        <h3>Customer Support</h3>
+        <p>Responsive customer service with real-time communication for shipping status updates.</p>
       </div>
     </div>
   </div>
@@ -185,108 +199,126 @@
           <div class="portfolio-card">
             <img src="assets/images/tr.jpg" alt="Distribusi Barang Industri" />
             <div class="portfolio-info">
-              <h3>Distribusi Barang Industri</h3>
-              <p>Proyek pengiriman alat berat dan sparepart ke kawasan industri Bekasi-Cikarang.</p>
+              <h3>Distribution of Industrial Goods</h3>
+              <p>Heavy equipment and spare parts delivery project to the Bekasi-Cikarang industrial area.</p>
             </div>
           </div>
           <div class="portfolio-card">
             <img src="assets/images/tr.jpg" alt="Ekspor Komoditas" />
             <div class="portfolio-info">
-              <h3>Ekspor Komoditas</h3>
-              <p>Ekspor kopi dan rempah ke negara-negara Asia Tenggara dengan pengurusan bea cukai penuh.</p>
+              <h3>Commodity Exports</h3>
+              <p>Export coffee and spices to Southeast Asian countries with full customs clearance.</p>
             </div>
           </div>
           <div class="portfolio-card">
             <img src="assets/images/tr.jpg" alt="Logistik Acara Besar" />
             <div class="portfolio-info">
-              <h3>Logistik Acara Besar</h3>
-              <p>Penanganan logistik event nasional dengan distribusi peralatan ke seluruh Indonesia.</p>
+              <h3>Big Event Logistics</h3>
+              <p>Handling national event logistics with equipment distribution throughout Indonesia.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Client & Partner Logos -->
-    <section id="clients" class="section light-section">
-      <div class="container">
-        <h2 class="section-title">Client & Partner</h2>
-        <div class="swiper logo-slider">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="assets/images/kai.png" alt="Logo KAI - Klien Kami"></div>
-            <div class="swiper-slide"><img src="assets/images/inka.svg" alt="Logo INKA - Klien Kami"></div>
-            <div class="swiper-slide"><img src="assets/images/dishub.png" alt="Logo Dishub - Klien Kami"></div>
-            <div class="swiper-slide"><img src="assets/images/adyawinsa.png" alt="Logo Adyawinsa - Klien Kami"></div>
-            <div class="swiper-slide"><img src="assets/images/mrt.png" alt="Logo MRT Jakarta - Klien Kami"></div>
-            <div class="swiper-slide"><img src="assets/images/mhi.png" alt="Logo MHI - Klien Kami"></div>
-            <div class="swiper-slide"><img src="assets/images/sumit.png" alt="Logo Sumit - Klien Kami"></div>
-            <div class="swiper-slide"><img src="assets/images/pln.png" alt="Logo PLN - Klien Kami"></div>
-          </div>
-        </div>
+<!-- Client & Partner Logos -->
+<section id="clients" class="section light-section">
+  <div class="container">
+    <h2 class="section-title">Client & Partner</h2>
+    <div class="swiper logo-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="assets/images/kai.png" alt="Logo KAI - Klien Kami"></div>
+        <div class="swiper-slide"><img src="assets/images/inka.svg" alt="Logo INKA - Klien Kami"></div>
+        <div class="swiper-slide"><img src="assets/images/dishub.png" alt="Logo Dishub - Klien Kami"></div>
+        <div class="swiper-slide"><img src="assets/images/adyawinsa.png" alt="Logo Adyawinsa - Klien Kami"></div>
+        <div class="swiper-slide"><img src="assets/images/mrt.png" alt="Logo MRT Jakarta - Klien Kami"></div>
+        <div class="swiper-slide"><img src="assets/images/mhi.png" alt="Logo MHI - Klien Kami"></div>
+        <div class="swiper-slide"><img src="assets/images/sumit.png" alt="Logo Sumit - Klien Kami"></div>
+        <div class="swiper-slide"><img src="assets/images/pln.png" alt="Logo PLN - Klien Kami"></div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
+
 
     <!-- CTA Contact -->
     <section id="cta" class="cta-section">
       <div class="container">
-        <h2>Butuh Konsultasi Logistik?</h2>
-        <p>Kami siap bantu Anda menemukan solusi logistik yang tepat dan efisien.</p>
+        <h2>Need Logistics Consultation?</h2>
+        <p>We are ready to help you find the right and efficient logistics solution.</p>
         <a href="https://wa.me/6281234567890?text=I'm%20interested" class="btn-primary" target="_blank" rel="noopener noreferrer">
-          Hubungi Kami
+          Click here
         </a>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-about">
-          <h3>PT. Citra Selaras Logistik</h3>
-          <p>
-            Menyediakan solusi jasa logistik dan forwarding terpercaya dengan pengalaman profesional dan jaringan luas.
-          </p>
-        </div>
-  
-        <div class="footer-contact">
-          <h4>Kontak</h4>
-          <ul>
-            <li><i class="fas fa-map-marker-alt"></i> Jl. Industri No. 88, Jakarta</li>
-            <li><i class="fas fa-envelope"></i> info@citralogistics.co.id</li>
-            <li><i class="fas fa-phone"></i> +62 821 1292 9249</li>
-          </ul>
-        </div>
-  
-        <div class="footer-sosmed">
-          <h4>Follow Us</h4>
-          <div class="social-icons">
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-facebook"></i></a>
-          </div>
-        </div>
-  
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <!-- Kolom kiri: Deskripsi + Sertifikasi -->
+      <div class="footer-about">
+        <h3>PT. Citra Selaras Logistik</h3>
+        <p>
+          Providing trusted logistics and forwarding service solutions with professional experience and extensive network.
+        </p>
+
+        <!-- Sertifikat dipindah ke bawah deskripsi -->
         <div class="footer-certification">
-          <h4>Sertifikasi & Anggota</h4>
+          <h4> </h4>
           <div class="certification-logos">
-            <img src="assets/images/iso45001.png" alt="Logo Sertifikasi" />
-            <img src="assets/images/ISO9001.png" alt="Logo Sertifikasi" />
-            <img src="assets/images/fiata.png" alt="Logo Sertifikasi" />
-            <img src="assets/images/qmi.png" alt="Logo Sertifikasi" />
-            <img src="assets/images/alfi.png" alt="Logo Sertifikasi" />
-            <img src="assets/images/kadin.png" alt="Logo Sertifikasi" />
+            <img src="assets/images/iso45001.png" alt="ISO 45001" />
+            <img src="assets/images/ISO9001.png" alt="ISO 9001" />
+            <img src="assets/images/fiata.png" alt="FIATA" />
+            <img src="assets/images/qmi.png" alt="QMI" />
+            <img src="assets/images/alfi.png" alt="ALFI" />
+            <img src="assets/images/kadin.png" alt="KADIN" />
           </div>
         </div>
       </div>
-  
-      <div class="footer-bottom">
+
+      <!-- Kolom kanan: Kontak -->
+      <div class="footer-contact">
+        <h4>Contacts</h4>
+        <ul>
+          <li><i class="fas fa-map-marker-alt"></i> Jl. Industri No. 88, Jakarta</li>
+          <li><i class="fas fa-envelope"></i> info@citralogistics.co.id</li>
+          <li><i class="fas fa-phone"></i> +62 821 1292 9249</li>
+        </ul>
+
+        <div class="footer-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.2085447720227!2d106.83149511526226!3d-6.236741762808733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3dbadb9d5e3%3A0xc0fc2dbf3a19a62f!2sJl.%20Industri%20No.%2088%2C%20Jakarta!5e0!3m2!1sen!2sid!4v1683904912345!5m2!1sen!2sid"
+            width="100%"
+            height="200"
+            style="border:0; margin-top: 1rem;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer bawah: Sosial media di kiri -->
+    <div class="footer-bottom">
+      <div class="footer-bottom-inner">
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/company/pt-citra-selaras-logistik" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/citralogistics" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/citralogistics" target="_blank"><i class="fab fa-facebook"></i></a>
+        </div>
         <p>&copy; 2025 PT. Citra Selaras Logistik. All rights reserved.</p>
       </div>
     </div>
-  </footer>
+  </div>
+</footer>
+
+
   
 
-  <script>src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
     // Logo Slider (Client & Partner)
   
 
@@ -331,17 +363,22 @@
       }
     });
   
-    // Hero Slide Manual Rotator
-    const slides = document.querySelectorAll('.hero-slide');
-    let current = 0;
+    // Hero Slide 
+   let currentSlide = 0;
+const slides = document.querySelectorAll('.hero-slide');
+
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    slide.classList.remove('active');
+    if (i === index) slide.classList.add('active');
+  });
+}
+
+setInterval(() => {
+  currentSlide = (currentSlide + 1) % slides.length;
+  showSlide(currentSlide);
+}, 5000); // setiap 5 detik
   
-    function showNextSlide() {
-      slides[current].classList.remove('active');
-      current = (current + 1) % slides.length;
-      slides[current].classList.add('active');
-    }
-  
-    setInterval(showNextSlide, 5000);
   </script>
   
   
