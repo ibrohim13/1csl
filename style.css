@@ -427,12 +427,7 @@
     margin-top: 2rem;
   }
   
-  .logo-slider img {
-    max-height: 60px;
-    object-fit: contain;
-    opacity: 0.7;
-    transition: opacity 0.3s ease;
-  }
+
   
   .logo-slider img:hover {
     opacity: 1;
@@ -676,6 +671,8 @@
   object-fit: contain;
   margin: 0 auto;
   display: block;
+  opacity: 0.7;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .footer-map iframe {
@@ -849,6 +846,159 @@
     grid-template-columns: 1fr;
   }
 }
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px; /* sesuaikan dengan kebutuhan */
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Penting agar gambar mengisi tanpa distorsi */
+  border-radius: 20px;
+}
+
+.portfolio-card {
+  background-color: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+  height: 100%;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-5px);
+}
+
+.portfolio-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.portfolio-info {
+  padding: 1rem;
+}
+
+.swiper {
+  padding-bottom: 3rem;
+}
+
+.galeri-kegiatan .swiper-slide {
+  width: 100%;
+  height: 300px; /* Atur tinggi sesuai kebutuhan */
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.galeri-kegiatan .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .galeri-kegiatan .swiper-slide {
+    height: 200px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .galeri-kegiatan .swiper-slide {
+    height: 350px;
+  }
+}
+
+.bmc-section {
+  background: #f9fcff;
+  padding: 60px 0;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  position: relative;
+  color: #1a1a1a;
+}
+
+.section-title::after {
+  content: '';
+  width: 60px;
+  height: 4px;
+  background: #e11d48;
+  display: block;
+  margin: 16px auto 0;
+  border-radius: 2px;
+}
+
+.bmc-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  justify-items: center;
+}
+
+.bmc-box {
+  background: linear-gradient(to bottom right, #ffffff, #f0f4ff);
+  padding: 24px 20px;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 320px;
+  position: relative;
+  overflow: hidden;
+}
+
+.bmc-box:hover {
+  transform: scale(1.05) rotate(-0.3deg);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.bmc-box h4 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #0f172a;
+}
+
+.bmc-box ul {
+  list-style: disc;
+  padding-left: 20px;
+  color: #374151;
+  line-height: 1.6;
+}
+
+.bmc-box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top left, rgba(255,255,255,0.2), transparent);
+  pointer-events: none;
+  z-index: 0;
+}
+.swiper-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+
 
 
 
